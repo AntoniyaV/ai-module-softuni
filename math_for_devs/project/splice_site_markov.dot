@@ -1,0 +1,30 @@
+digraph  {
+Exon;
+SS;
+Intron;
+A;
+C;
+G;
+T;
+Exon -> Exon  [key=0, label="0.9", weight="0.9"];
+Exon -> SS  [key=0, label="0.1", weight="0.1"];
+Exon -> Intron  [key=0, label="0.0", weight="0.0"];
+Exon -> A  [key=0, label="0.25", weight="0.25"];
+Exon -> C  [key=0, label="0.25", weight="0.25"];
+Exon -> G  [key=0, label="0.25", weight="0.25"];
+Exon -> T  [key=0, label="0.25", weight="0.25"];
+SS -> Exon  [key=0, label="0.0", weight="0.0"];
+SS -> SS  [key=0, label="0.0", weight="0.0"];
+SS -> Intron  [key=0, label="1.0", weight="1.0"];
+SS -> A  [key=0, label="0.05", weight="0.05"];
+SS -> C  [key=0, label="0.0", weight="0.0"];
+SS -> G  [key=0, label="0.95", weight="0.95"];
+SS -> T  [key=0, label="0.0", weight="0.0"];
+Intron -> Exon  [key=0, label="0.0", weight="0.0"];
+Intron -> SS  [key=0, label="0.0", weight="0.0"];
+Intron -> Intron  [key=0, label="1.0", weight="1.0"];
+Intron -> A  [key=0, label="0.4", weight="0.4"];
+Intron -> C  [key=0, label="0.1", weight="0.1"];
+Intron -> G  [key=0, label="0.1", weight="0.1"];
+Intron -> T  [key=0, label="0.4", weight="0.4"];
+}
